@@ -110,3 +110,93 @@ for (const directory_entry& x : directory_iterator{p})
 ```cmake
 file(COPY misc DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 ```
+## Результат Работы программы
+```Shell
+ftp
+ ├──ib
+     ├──balance_00100001_20181013.txt
+     ├──balance_00100002_20181013.txt
+     ├──balance_00100002_20180916.txt
+     ├──balance_00100003_20180921.txt
+     ├──balance_00100001_20180919.txt
+     ├──balance_00100001_20180904.txt
+     ├──balance_00100002_20181011.txt
+     ├──balance_00100002_20181009.txt
+     ├──balance_00100003_20181011.txt
+     ├──balance_00100002_20180922.txt
+     ├──balance_00100003_20180924.txt
+     ├──balance_00100003_20181014.txt
+     ├──balance_00100003_20181017.txt
+     ...
+     ├──balance_00100001_20181016.txt
+     ├──balance_00100002_20180923.txt
+ ├──bcs
+     ├──balance_00122223_20180901.old.txt
+     ├──balance_00123456_20181010.txt
+     ├──balance_00123458_20180904.txt
+     ├──balance_00143456_20180919.txt
+     ├──balance_00123456_20180921.txt
+     ├──balance_00122223_20181004.txt
+     ├──balance_00122223_20180902.old.txt
+     ├──balance_00123456_20181007.txt
+     ├──balance_00123458_20181010.txt
+     ├──balance_00123458_20180906.txt
+     ...
+     ├──balance_00122223_20180904.old.txt
+     ├──balance_00123456_20180920.txt
+     ├──balance_00123456_20181002.txt
+ ├──otkritie
+     ├──balance_03934520_20181009.txt
+     ├──balance_03934520_20180923.txt
+     ├──balance_03934520_20181017.txt
+     ├──balance_03934520_20180917.txt
+     ├──balance_03934520_20181011.txt
+     ├──balance_03934523_20181003.txt
+     ├──balance_03934523_20180910.txt
+     ├──balance_03934520_20180904.txt
+     ├──balance_03934523_20181002.txt
+     ├──balance_03934523_20180922.txt
+     ├──balance_03934520_20180926.txt
+     ├──balance_03934523_20181012.txt
+     ├──balance_03934520_20180906.txt
+     ├──balance_03934523_20180929.txt
+     ├──balance_03934520_20180920.txt
+     ├──balance_03934523_20180918.txt
+     ├──balance_03934523_20181015.txt
+     ├──balance_03934523_20181014.txt
+     ...
+     ├──balance_03934520_20180918.txt
+```
+### Другой вариант вывода
+```Shell
+ib         balance_00100001_20181013.txt
+ib         balance_00100002_20181013.txt
+...
+ib         balance_00100003_20180902.txt
+ib         balance_00100003_20181015.txt
+ib         balance_00100003_20181002.txt
+ib         balance_00100001_20181016.txt
+ib         balance_00100002_20180923.txt
+bcs        balance_00123456_20181010.txt
+bcs        balance_00123458_20180904.txt
+bcs        balance_00143456_20180919.txt
+
+bcs        balance_00123456_20181008.txt
+bcs        balance_00143456_20180911.txt
+bcs        balance_00123458_20180903.txt
+...
+bcs        balance_00123456_20180920.txt
+bcs        balance_00123456_20181002.txt
+otkritie   balance_03934520_20181009.txt
+otkritie   balance_03934520_20180923.txt
+otkritie   balance_03934520_20181017.txt
+otkritie   balance_03934520_20180917.txt
+otkritie   balance_03934520_20181011.txt
+otkritie   balance_03934523_20181003.txt
+otkritie   balance_03934523_20180910.txt
+otkritie   balance_03934520_20180904.txt
+otkritie   balance_03934523_20181002.txt
+otkritie   balance_03934523_20180922.txt
+...
+otkritie   balance_03934520_20180918.txt
+```
