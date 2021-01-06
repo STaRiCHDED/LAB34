@@ -24,8 +24,7 @@ Analysis::Analysis(const std::string& path) {
             (y.path().extension() == ".txt") &&
             (std::regex_search(y.path().stem().string(), re))) {
           std::cout << std::left << std::setw(10)
-                    << y.path().parent_path().filename().string()
-                    <<" "
+                    << y.path().parent_path().filename().string() << " "
                     << y.path().filename().string() << '\n';
 
           MasPath.push_back(y.path());
@@ -90,12 +89,12 @@ void Analysis::printData(const std::string& path) {
           if ((y.path().extension() == ".txt") &&
               (std::regex_search(y.path().stem().string(), re))) {
             std::string dir = y.path().parent_path().filename().string();
-            if (k==0){
-              std::cout<<" ├──"<<dir<<std::endl;
+            if (k == 0) {
+              std::cout << " ├──" << dir << std::endl;
               k++;
             }
-            std::cout <<"     ├──"
-                      << y.path().filename().string() << std::endl;
+            std::cout << "     ├──" << y.path().filename().string()
+                      << std::endl;
           }
         }
       }
