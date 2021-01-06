@@ -15,10 +15,10 @@ std::string currentDir(const std::string& name) {
 TEST(Example, EmptyTest) { EXPECT_TRUE(true); }
 
 TEST(Analysis, testFuncPrint) {
-  std::string Path{currentDir("TestID")};
+  std::string Path{currentDir("TestID1")};
   Analysis A(Path);
   ASSERT_EQ(A.printAccount(A.getPathToAccount(0), 1).str(),
-            "broker: ib       account: 00100003 files: 1   lastdate: 20181017");
+            "broker: bcs      account: 00100003 files: 1   lastdate: 20181017");
 }
 
 TEST(Analysis, testOverload) {
